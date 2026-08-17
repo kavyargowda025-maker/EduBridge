@@ -1,0 +1,487 @@
+{
+  "users": [
+    {
+      "id": "u-std-1",
+      "admission_no": "20260125",
+      "password": "student123",
+      "role": "student",
+      "name": "Rahul Kumar"
+    },
+    {
+      "id": "u-tch-1",
+      "admission_no": "TEACHER01",
+      "password": "teacher123",
+      "role": "teacher",
+      "name": "Mrs. Priya Sharma"
+    },
+    {
+      "id": "u-adm-1",
+      "admission_no": "ADMIN01",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Dr. V. K. Mehta"
+    }
+  ],
+  "students": [
+    {
+      "id": "s-1",
+      "user_id": "u-std-1",
+      "admission_no": "20260125",
+      "name": "Rahul Kumar",
+      "class_name": "8",
+      "section": "A",
+      "dob": "2012-05-12",
+      "parent_name": "Rajesh Kumar",
+      "phone": "+91 98765 43210",
+      "email": "rahul.kumar@abcschool.edu.in",
+      "address": "42, Park View Enclave, Civil Lines, City - 110001",
+      "photo_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+      "roll_no": "18",
+      "academic_year": "2026-2027"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att-1",
+      "student_id": "s-1",
+      "date": "2026-08-01",
+      "status": "holiday",
+      "remark": "Weekend"
+    },
+    {
+      "id": "att-2",
+      "student_id": "s-1",
+      "date": "2026-08-02",
+      "status": "holiday",
+      "remark": "Weekend"
+    },
+    {
+      "id": "att-3",
+      "student_id": "s-1",
+      "date": "2026-08-03",
+      "status": "present"
+    },
+    {
+      "id": "att-4",
+      "student_id": "s-1",
+      "date": "2026-08-04",
+      "status": "present"
+    },
+    {
+      "id": "att-5",
+      "student_id": "s-1",
+      "date": "2026-08-05",
+      "status": "absent",
+      "remark": "Sick Leave"
+    },
+    {
+      "id": "att-6",
+      "student_id": "s-1",
+      "date": "2026-08-06",
+      "status": "present"
+    },
+    {
+      "id": "att-7",
+      "student_id": "s-1",
+      "date": "2026-08-07",
+      "status": "present"
+    },
+    {
+      "id": "att-8",
+      "student_id": "s-1",
+      "date": "2026-08-08",
+      "status": "holiday",
+      "remark": "Weekend"
+    },
+    {
+      "id": "att-9",
+      "student_id": "s-1",
+      "date": "2026-08-09",
+      "status": "holiday",
+      "remark": "Weekend"
+    },
+    {
+      "id": "att-10",
+      "student_id": "s-1",
+      "date": "2026-08-10",
+      "status": "present"
+    },
+    {
+      "id": "att-11",
+      "student_id": "s-1",
+      "date": "2026-08-11",
+      "status": "present"
+    },
+    {
+      "id": "att-12",
+      "student_id": "s-1",
+      "date": "2026-08-12",
+      "status": "present"
+    },
+    {
+      "id": "att-13",
+      "student_id": "s-1",
+      "date": "2026-08-13",
+      "status": "present"
+    },
+    {
+      "id": "att-14",
+      "student_id": "s-1",
+      "date": "2026-08-14",
+      "status": "absent",
+      "remark": "Family Function"
+    },
+    {
+      "id": "att-15",
+      "student_id": "s-1",
+      "date": "2026-08-15",
+      "status": "holiday",
+      "remark": "Independence Day"
+    },
+    {
+      "id": "att-16",
+      "student_id": "s-1",
+      "date": "2026-08-16",
+      "status": "holiday",
+      "remark": "Weekend"
+    },
+    {
+      "id": "att-17",
+      "student_id": "s-1",
+      "date": "2026-08-17",
+      "status": "present",
+      "remark": "Present Today"
+    },
+    {
+      "id": "att-18",
+      "student_id": "s-1",
+      "date": "2026-08-18",
+      "status": "present"
+    },
+    {
+      "id": "att-19",
+      "student_id": "s-1",
+      "date": "2026-08-19",
+      "status": "present"
+    },
+    {
+      "id": "att-20",
+      "student_id": "s-1",
+      "date": "2026-08-20",
+      "status": "present"
+    },
+    {
+      "id": "att-21",
+      "student_id": "s-1",
+      "date": "2026-08-21",
+      "status": "present"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "subj-math",
+      "code": "MATH8",
+      "class_name": "8",
+      "title": "Mathematics",
+      "icon": "Calculator",
+      "teacher_name": "Mrs. Priya Sharma",
+      "description": "Algebra, Geometry, Data Handling & Linear Equations"
+    },
+    {
+      "id": "subj-sci",
+      "code": "SCI8",
+      "class_name": "8",
+      "title": "Science",
+      "icon": "FlaskConical",
+      "teacher_name": "Mr. Rajesh Verma",
+      "description": "Physics, Chemistry, Biology & Environmental Studies"
+    },
+    {
+      "id": "subj-eng",
+      "code": "ENG8",
+      "class_name": "8",
+      "title": "English Language & Literature",
+      "icon": "BookOpen",
+      "teacher_name": "Ms. Ananya Sen",
+      "description": "Grammar, Creative Writing, Prose & Poetry Reading"
+    },
+    {
+      "id": "subj-sst",
+      "code": "SST8",
+      "class_name": "8",
+      "title": "Social Science",
+      "icon": "Globe",
+      "teacher_name": "Mr. Suresh Gupta",
+      "description": "History, Geography, Political Science & Civics"
+    },
+    {
+      "id": "subj-hin",
+      "code": "HIN8",
+      "class_name": "8",
+      "title": "Hindi",
+      "icon": "Languages",
+      "teacher_name": "Mrs. Sunita Devi",
+      "description": "Vyakaran, Vasant Bhag 3, Literature & Composition"
+    },
+    {
+      "id": "subj-cs",
+      "code": "CS8",
+      "class_name": "8",
+      "title": "Computer Science",
+      "icon": "Monitor",
+      "teacher_name": "Mr. Amit Patel",
+      "description": "Web Technologies, HTML5, CSS3, Scratch & Python Basics"
+    }
+  ],
+  "homework": [
+    {
+      "id": "hw-1",
+      "subject_id": "subj-math",
+      "subject_name": "Mathematics",
+      "class_name": "8",
+      "title": "Chapter 5 - Algebra Equations",
+      "description": "Solve the algebraic equations below in your homework notebook and show all steps:",
+      "questions": [
+        "5x + 10 = 35",
+        "3x - 7 = 14",
+        "2x + 8 = 24",
+        "Solve: 4(y - 3) = 2y + 10"
+      ],
+      "assigned_date": "2026-08-16",
+      "due_date": "2026-08-18",
+      "status": "pending"
+    },
+    {
+      "id": "hw-2",
+      "subject_id": "subj-sci",
+      "subject_name": "Science",
+      "class_name": "8",
+      "title": "Chapter 4 - Metals and Non-Metals",
+      "description": "Complete the chemical reaction chart and diagram:",
+      "questions": [
+        "Write the word equation for the reaction of Sodium with Water.",
+        "List 4 physical differences between metals and non-metals.",
+        "Draw a neat labeled diagram of electrolysis process."
+      ],
+      "assigned_date": "2026-08-15",
+      "due_date": "2026-08-17",
+      "status": "submitted"
+    },
+    {
+      "id": "hw-3",
+      "subject_id": "subj-cs",
+      "subject_name": "Computer Science",
+      "class_name": "8",
+      "title": "Chapter 3 - HTML & CSS Web Page",
+      "description": "Create an HTML file with semantic layout:",
+      "questions": [
+        "Include <h1> heading with your school name.",
+        "Add a styled paragraph using CSS inline/internal styling.",
+        "Create an un-ordered list of your top 3 favorite subjects."
+      ],
+      "assigned_date": "2026-08-14",
+      "due_date": "2026-08-19",
+      "status": "pending"
+    }
+  ],
+  "textbooks": [
+    {
+      "id": "tb-math",
+      "subject_id": "subj-math",
+      "book_title": "NCERT Mathematics Class 8",
+      "author": "NCERT Editorial Board",
+      "chapters": [
+        {
+          "id": "chap-m1",
+          "chapter_number": 1,
+          "title": "Rational Numbers",
+          "summary": "Introduction to rational numbers, closure properties, commutativity, and representation on number line.",
+          "topics": [
+            "1.1 Properties of Rational Numbers",
+            "1.2 Representation of Rational Numbers on Number Line",
+            "1.3 Rational Numbers between two Rational Numbers"
+          ]
+        },
+        {
+          "id": "chap-m2",
+          "chapter_number": 2,
+          "title": "Linear Equations in One Variable",
+          "summary": "Solving algebraic linear equations containing single variables on one or both sides.",
+          "topics": [
+            "2.1 Solving Equations having expression on one side",
+            "2.2 Word Problems and Practical Applications",
+            "2.3 Solving Equations with variable on both sides",
+            "2.4 Reducing Equations to Simpler Linear Form"
+          ]
+        },
+        {
+          "id": "chap-m3",
+          "chapter_number": 3,
+          "title": "Understanding Quadrilaterals",
+          "summary": "Polygons, classification by sides and angles, sum of interior and exterior angles.",
+          "topics": [
+            "3.1 Classification of Polygons",
+            "3.2 Sum of Measures of Exterior Angles",
+            "3.3 Parallelograms and Special Quadrilaterals",
+            "3.4 Rhombus, Rectangle, and Square properties"
+          ]
+        },
+        {
+          "id": "chap-m4",
+          "chapter_number": 4,
+          "title": "Data Handling",
+          "summary": "Organizing data, frequency tables, histograms, pie charts, and basic probability concepts.",
+          "topics": [
+            "4.1 Grouped Frequency Distribution",
+            "4.2 Constructing and Reading Histograms",
+            "4.3 Circle Graphs (Pie Charts)",
+            "4.4 Chance and Probability"
+          ]
+        },
+        {
+          "id": "chap-m5",
+          "chapter_number": 5,
+          "title": "Algebraic Expressions & Identities",
+          "summary": "Polynomial terms, addition, subtraction, multiplication, and standard algebraic identities.",
+          "topics": [
+            "5.1 Monomials, Binomials, and Polynomials",
+            "5.2 Addition and Subtraction of Algebraic Expressions",
+            "5.3 Multiplying a Monomial by a Polynomial",
+            "5.4 Standard Identities: (a+b)², (a-b)², (x+a)(x+b)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tb-sci",
+      "subject_id": "subj-sci",
+      "book_title": "NCERT Science Class 8",
+      "author": "NCERT Science Publication",
+      "chapters": [
+        {
+          "id": "chap-s1",
+          "chapter_number": 1,
+          "title": "Crop Production and Management",
+          "summary": "Agricultural practices, soil preparation, sowing, irrigation, harvesting, and crop storage.",
+          "topics": [
+            "1.1 Agricultural Practices",
+            "1.2 Basic Practices of Crop Production",
+            "1.3 Preparation of Soil & Sowing",
+            "1.4 Adding Manure and Fertilizers",
+            "1.5 Irrigation Systems"
+          ]
+        },
+        {
+          "id": "chap-s2",
+          "chapter_number": 2,
+          "title": "Microorganisms: Friend and Foe",
+          "summary": "Types of microbes, beneficial applications in food/medicine, harmful pathogens and preservation.",
+          "topics": [
+            "2.1 Types of Microorganisms",
+            "2.2 Friendly Microorganisms",
+            "2.3 Commercial & Medicinal Use",
+            "2.4 Disease Causing Microorganisms",
+            "2.5 Food Preservation Methods"
+          ]
+        }
+      ]
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "class_name": "8-A",
+      "title": "📢 Mathematics Test Announcement",
+      "content": "Important: Mathematics weekly unit test will be conducted on Friday (22nd August). Syllabus covers Chapter 5 (Algebra) and Chapter 2 (Linear Equations). Bring graph sheets and geometry boxes.",
+      "posted_at": "2026-08-17 09:30 AM",
+      "category": "academic",
+      "author": "Mrs. Priya Sharma (Class Teacher)"
+    },
+    {
+      "id": "ann-2",
+      "class_name": "8-A",
+      "title": "📢 Science Model Submission Deadline",
+      "content": "Reminder: Science project physical models on Renewable Energy sources are due by Wednesday, 19th August. Submit your models in Science Lab 2 during 4th period.",
+      "posted_at": "2026-08-16 02:15 PM",
+      "category": "urgent",
+      "author": "Mr. Rajesh Verma"
+    },
+    {
+      "id": "ann-3",
+      "class_name": "8-A",
+      "title": "📢 Parent-Teacher Meeting (PTM)",
+      "content": "The 2nd Term Parent-Teacher Meeting is scheduled for Saturday, 23rd August from 9:00 AM to 12:30 PM. Both parents are cordially invited to review academic progress.",
+      "posted_at": "2026-08-15 11:00 AM",
+      "category": "general",
+      "author": "Dr. V. K. Mehta (Principal)"
+    }
+  ],
+  "fees": [
+    {
+      "id": "fee-1",
+      "student_id": "s-1",
+      "total_amount": 60000,
+      "paid_amount": 45000,
+      "due_amount": 15000,
+      "history": [
+        {
+          "id": "fh-1",
+          "month": "June 2026 (Q1 Tuition & Lab)",
+          "amount": 15000,
+          "status": "paid",
+          "payment_date": "2026-06-05",
+          "receipt_no": "REC-2026-091",
+          "method": "Online UPI / Net Banking"
+        },
+        {
+          "id": "fh-2",
+          "month": "July 2026 (Q2 Tuition)",
+          "amount": 15000,
+          "status": "paid",
+          "payment_date": "2026-07-03",
+          "receipt_no": "REC-2026-442",
+          "method": "Debit Card"
+        },
+        {
+          "id": "fh-3",
+          "month": "August 2026 (Q3 Tuition)",
+          "amount": 15000,
+          "status": "paid",
+          "payment_date": "2026-08-02",
+          "receipt_no": "REC-2026-881",
+          "method": "Online Banking"
+        },
+        {
+          "id": "fh-4",
+          "month": "September 2026 (Q4 Final Term)",
+          "amount": 15000,
+          "status": "pending"
+        }
+      ]
+    }
+  ],
+  "admission_enquiries": [
+    {
+      "id": "enq-101",
+      "student_name": "Aarav Gupta",
+      "parent_name": "Sanjay Gupta",
+      "phone": "+91 98112 34567",
+      "email": "sanjay.gupta@email.com",
+      "class_applying": "Class 6",
+      "message": "Looking for admission for my son in Class 6 for mid-session entry. Please share prospectus and fee structure.",
+      "status": "pending",
+      "created_at": "2026-08-16 10:20 AM"
+    }
+  ],
+  "contact_messages": [
+    {
+      "id": "msg-201",
+      "name": "Ritu Saxena",
+      "phone": "+91 99887 76655",
+      "email": "ritu.saxena@example.com",
+      "message": "Enquiring about school bus transport availability for Green Park area.",
+      "status": "new",
+      "created_at": "2026-08-17 08:45 AM"
+    }
+  ]
+}
