@@ -83,10 +83,14 @@ function getLocalIpAddress(): string {
 
 const localIp = getLocalIpAddress();
 
-app.listen(Number(PORT), '0.0.0.0', () => {
-  console.log(`==================================================`);
-  console.log(` 🎓 Horizon International School • EduBridge API  `);
-  console.log(` 💻 Local API:    http://localhost:${PORT}       `);
-  console.log(` 📱 Network API:  http://${localIp}:${PORT}     `);
-  console.log(`==================================================`);
-});
+if (!process.env.VERCEL) {
+  app.listen(Number(PORT), '0.0.0.0', () => {
+    console.log(`==================================================`);
+    console.log(` 🎓 Horizon International School • EduBridge API  `);
+    console.log(` 💻 Local API:    http://localhost:${PORT}       `);
+    console.log(` 📱 Network API:  http://${localIp}:${PORT}     `);
+    console.log(`==================================================`);
+  });
+}
+
+export default app;
