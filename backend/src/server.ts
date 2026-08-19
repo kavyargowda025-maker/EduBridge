@@ -49,6 +49,11 @@ app.post('/api/admin/attendance', authenticateToken, requireRole(['teacher', 'ad
 app.post('/api/admin/homework', authenticateToken, requireRole(['teacher', 'admin']), addHomework);
 app.post('/api/admin/announcements', authenticateToken, requireRole(['teacher', 'admin']), createAnnouncement);
 
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', server: 'Horizon International School - EduBridge API', timestamp: new Date().toISOString() });
+});
+
 import path from 'path';
 import fs from 'fs';
 
@@ -61,11 +66,6 @@ if (fs.existsSync(frontendDistPath)) {
     res.sendFile(path.join(frontendDistPath, 'index.html'));
   });
 }
-
-// Health check endpoint
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', server: 'Horizon International School - EduBridge API', timestamp: new Date().toISOString() });
-});
 
 import os from 'os';
 

@@ -1,5 +1,4 @@
-const API_HOSTNAME = typeof window !== 'undefined' && window.location.hostname ? window.location.hostname : 'localhost';
-const API_BASE_URL = `http://${API_HOSTNAME}:5000/api`;
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 export interface User {
   id: string;
