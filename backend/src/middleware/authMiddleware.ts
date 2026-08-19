@@ -1,7 +1,17 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
-export const JWT_SECRET = process.env.JWT_SECRET || 'abc_school_student_diary_secret_2026';
+export const getJwtSecret = (): string => {
+  if (process.env.JWT_SECRET) {
+    return process.env.JWT_SECRET;
+  }
+  if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
+    console.warn('[Security Warning] JWT_SECRET environment variable is missing in production environment.');
+  }
+  return 'abc_school_student_diary_secret_2026_dev_only';
+};
+
+export const JWT_SECRET = getJwtSecret();
 
 export interface AuthRequest extends Request {
   user?: {
@@ -21,7 +31,7 @@ export const authenticateToken = (req: AuthRequest, res: Response, next: NextFun
   }
 
   try {
-    const decoded = jwt.verify(token, JWT_SECRET) as AuthRequest['user'];
+    const decoded = jwt.verify(token, getJwtSecret()) as AuthRequest['user'];
     req.user = decoded;
     next();
   } catch (error) {

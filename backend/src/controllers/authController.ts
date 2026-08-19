@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { db } from '../config/database';
-import { JWT_SECRET, AuthRequest } from '../middleware/authMiddleware';
+import { getJwtSecret, AuthRequest } from '../middleware/authMiddleware';
 
 export const login = (req: Request, res: Response) => {
   const { admission_no, password } = req.body;
@@ -32,7 +32,7 @@ export const login = (req: Request, res: Response) => {
       role: user.role,
       name: user.name
     },
-    JWT_SECRET,
+    getJwtSecret(),
     { expiresIn: '24h' }
   );
 
